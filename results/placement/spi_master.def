@@ -1,0 +1,1434 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN spi_master ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 92570 103290 ) ;
+ROW ROW_0 unithd 5520 10880 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 13600 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 16320 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 5520 19040 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 5520 21760 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 5520 24480 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 5520 27200 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 5520 29920 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 5520 32640 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 5520 35360 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_10 unithd 5520 38080 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_11 unithd 5520 40800 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_12 unithd 5520 43520 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_13 unithd 5520 46240 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_14 unithd 5520 48960 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_15 unithd 5520 51680 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_16 unithd 5520 54400 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_17 unithd 5520 57120 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_18 unithd 5520 59840 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_19 unithd 5520 62560 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_20 unithd 5520 65280 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_21 unithd 5520 68000 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_22 unithd 5520 70720 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_23 unithd 5520 73440 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_24 unithd 5520 76160 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_25 unithd 5520 78880 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_26 unithd 5520 81600 N DO 177 BY 1 STEP 460 0 ;
+ROW ROW_27 unithd 5520 84320 FS DO 177 BY 1 STEP 460 0 ;
+ROW ROW_28 unithd 5520 87040 N DO 177 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 201 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 304 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 272 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 304 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 201 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 224 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 136 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 152 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 100 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 112 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 27 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 30 STEP 3400 LAYER met5 ;
+GCELLGRID X 0 DO 13 STEP 6900 ;
+GCELLGRID Y 0 DO 14 STEP 6900 ;
+VIAS 4 ;
+    - via2_3_1600_480_1_5_320_320 + VIARULE M1M2_PR + CUTSIZE 150 150  + LAYERS met1 via met2  + CUTSPACING 170 170  + ENCLOSURE 85 165 55 85  + ROWCOL 1 5  ;
+    - via3_4_1600_480_1_4_400_400 + VIARULE M2M3_PR + CUTSIZE 200 200  + LAYERS met2 via2 met3  + CUTSPACING 200 200  + ENCLOSURE 40 85 65 65  + ROWCOL 1 4  ;
+    - via4_5_1600_480_1_4_400_400 + VIARULE M3M4_PR + CUTSIZE 200 200  + LAYERS met3 via3 met4  + CUTSPACING 200 200  + ENCLOSURE 90 60 100 65  + ROWCOL 1 4  ;
+    - via5_6_1600_1600_1_1_1600_1600 + VIARULE M4M5_PR + CUTSIZE 800 800  + LAYERS met4 via4 met5  + CUTSPACING 800 800  + ENCLOSURE 400 190 310 400  ;
+END VIAS
+COMPONENTS 428 ;
+    - PHY_0 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 10880 ) N ;
+    - PHY_1 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 10880 ) FN ;
+    - PHY_10 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 24480 ) FS ;
+    - PHY_11 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 24480 ) S ;
+    - PHY_12 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 27200 ) N ;
+    - PHY_13 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 27200 ) FN ;
+    - PHY_14 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 29920 ) FS ;
+    - PHY_15 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 29920 ) S ;
+    - PHY_16 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 32640 ) N ;
+    - PHY_17 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 32640 ) FN ;
+    - PHY_18 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 35360 ) FS ;
+    - PHY_19 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 35360 ) S ;
+    - PHY_2 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 13600 ) FS ;
+    - PHY_20 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 38080 ) N ;
+    - PHY_21 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 38080 ) FN ;
+    - PHY_22 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 40800 ) FS ;
+    - PHY_23 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 40800 ) S ;
+    - PHY_24 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 43520 ) N ;
+    - PHY_25 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 43520 ) FN ;
+    - PHY_26 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 46240 ) FS ;
+    - PHY_27 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 46240 ) S ;
+    - PHY_28 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 48960 ) N ;
+    - PHY_29 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 48960 ) FN ;
+    - PHY_3 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 13600 ) S ;
+    - PHY_30 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 51680 ) FS ;
+    - PHY_31 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 51680 ) S ;
+    - PHY_32 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 54400 ) N ;
+    - PHY_33 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 54400 ) FN ;
+    - PHY_34 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 57120 ) FS ;
+    - PHY_35 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 57120 ) S ;
+    - PHY_36 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 59840 ) N ;
+    - PHY_37 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 59840 ) FN ;
+    - PHY_38 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 62560 ) FS ;
+    - PHY_39 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 62560 ) S ;
+    - PHY_4 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 16320 ) N ;
+    - PHY_40 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 65280 ) N ;
+    - PHY_41 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 65280 ) FN ;
+    - PHY_42 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 68000 ) FS ;
+    - PHY_43 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 68000 ) S ;
+    - PHY_44 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 70720 ) N ;
+    - PHY_45 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 70720 ) FN ;
+    - PHY_46 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 73440 ) FS ;
+    - PHY_47 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 73440 ) S ;
+    - PHY_48 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 76160 ) N ;
+    - PHY_49 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 76160 ) FN ;
+    - PHY_5 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 16320 ) FN ;
+    - PHY_50 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 78880 ) FS ;
+    - PHY_51 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 78880 ) S ;
+    - PHY_52 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 81600 ) N ;
+    - PHY_53 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 81600 ) FN ;
+    - PHY_54 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 84320 ) FS ;
+    - PHY_55 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 84320 ) S ;
+    - PHY_56 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 87040 ) N ;
+    - PHY_57 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 87040 ) FN ;
+    - PHY_6 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 19040 ) FS ;
+    - PHY_7 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 19040 ) S ;
+    - PHY_8 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 5520 21760 ) N ;
+    - PHY_9 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 85560 21760 ) FN ;
+    - TAP_100 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 46240 ) FS ;
+    - TAP_101 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 46240 ) FS ;
+    - TAP_102 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 46240 ) FS ;
+    - TAP_103 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 48960 ) N ;
+    - TAP_104 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 48960 ) N ;
+    - TAP_105 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 48960 ) N ;
+    - TAP_106 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 51680 ) FS ;
+    - TAP_107 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 51680 ) FS ;
+    - TAP_108 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 51680 ) FS ;
+    - TAP_109 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 54400 ) N ;
+    - TAP_110 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 54400 ) N ;
+    - TAP_111 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 54400 ) N ;
+    - TAP_112 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 57120 ) FS ;
+    - TAP_113 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 57120 ) FS ;
+    - TAP_114 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 57120 ) FS ;
+    - TAP_115 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 59840 ) N ;
+    - TAP_116 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 59840 ) N ;
+    - TAP_117 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 59840 ) N ;
+    - TAP_118 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 62560 ) FS ;
+    - TAP_119 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 62560 ) FS ;
+    - TAP_120 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 62560 ) FS ;
+    - TAP_121 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 65280 ) N ;
+    - TAP_122 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 65280 ) N ;
+    - TAP_123 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 65280 ) N ;
+    - TAP_124 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 68000 ) FS ;
+    - TAP_125 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 68000 ) FS ;
+    - TAP_126 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 68000 ) FS ;
+    - TAP_127 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 70720 ) N ;
+    - TAP_128 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 70720 ) N ;
+    - TAP_129 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 70720 ) N ;
+    - TAP_130 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 73440 ) FS ;
+    - TAP_131 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 73440 ) FS ;
+    - TAP_132 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 73440 ) FS ;
+    - TAP_133 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 76160 ) N ;
+    - TAP_134 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 76160 ) N ;
+    - TAP_135 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 76160 ) N ;
+    - TAP_136 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 78880 ) FS ;
+    - TAP_137 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 78880 ) FS ;
+    - TAP_138 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 78880 ) FS ;
+    - TAP_139 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 81600 ) N ;
+    - TAP_140 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 81600 ) N ;
+    - TAP_141 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 81600 ) N ;
+    - TAP_142 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 84320 ) FS ;
+    - TAP_143 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 84320 ) FS ;
+    - TAP_144 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 84320 ) FS ;
+    - TAP_145 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 87040 ) N ;
+    - TAP_146 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 87040 ) N ;
+    - TAP_147 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 87040 ) N ;
+    - TAP_148 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 87040 ) N ;
+    - TAP_149 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 87040 ) N ;
+    - TAP_150 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 87040 ) N ;
+    - TAP_58 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 10880 ) N ;
+    - TAP_59 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 10880 ) N ;
+    - TAP_60 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 10880 ) N ;
+    - TAP_61 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 10880 ) N ;
+    - TAP_62 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 10880 ) N ;
+    - TAP_63 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 10880 ) N ;
+    - TAP_64 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 13600 ) FS ;
+    - TAP_65 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 13600 ) FS ;
+    - TAP_66 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 13600 ) FS ;
+    - TAP_67 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 16320 ) N ;
+    - TAP_68 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 16320 ) N ;
+    - TAP_69 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 16320 ) N ;
+    - TAP_70 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 19040 ) FS ;
+    - TAP_71 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 19040 ) FS ;
+    - TAP_72 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 19040 ) FS ;
+    - TAP_73 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 21760 ) N ;
+    - TAP_74 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 21760 ) N ;
+    - TAP_75 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 21760 ) N ;
+    - TAP_76 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 24480 ) FS ;
+    - TAP_77 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 24480 ) FS ;
+    - TAP_78 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 24480 ) FS ;
+    - TAP_79 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 27200 ) N ;
+    - TAP_80 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 27200 ) N ;
+    - TAP_81 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 27200 ) N ;
+    - TAP_82 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 29920 ) FS ;
+    - TAP_83 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 29920 ) FS ;
+    - TAP_84 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 29920 ) FS ;
+    - TAP_85 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 32640 ) N ;
+    - TAP_86 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 32640 ) N ;
+    - TAP_87 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 32640 ) N ;
+    - TAP_88 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 35360 ) FS ;
+    - TAP_89 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 35360 ) FS ;
+    - TAP_90 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 35360 ) FS ;
+    - TAP_91 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 38080 ) N ;
+    - TAP_92 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 38080 ) N ;
+    - TAP_93 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 38080 ) N ;
+    - TAP_94 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 31280 40800 ) FS ;
+    - TAP_95 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 57040 40800 ) FS ;
+    - TAP_96 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 82800 40800 ) FS ;
+    - TAP_97 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 18400 43520 ) N ;
+    - TAP_98 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 44160 43520 ) N ;
+    - TAP_99 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 69920 43520 ) N ;
+    - _204_ sky130_fd_sc_hd__or2_2 + PLACED ( 44620 27200 ) N ;
+    - _205_ sky130_fd_sc_hd__or4_1 + PLACED ( 65320 46240 ) S ;
+    - _206_ sky130_fd_sc_hd__or4bb_1 + PLACED ( 54740 32640 ) N ;
+    - _207_ sky130_fd_sc_hd__or4_1 + PLACED ( 66240 29920 ) S ;
+    - _208_ sky130_fd_sc_hd__or4_1 + PLACED ( 60720 24480 ) FS ;
+    - _209_ sky130_fd_sc_hd__nor4_1 + PLACED ( 59340 35360 ) S ;
+    - _210_ sky130_fd_sc_hd__inv_2 + PLACED ( 51520 29920 ) FS ;
+    - _211_ sky130_fd_sc_hd__a21o_1 + PLACED ( 47840 43520 ) N ;
+    - _212_ sky130_fd_sc_hd__nand2_1 + PLACED ( 44620 48960 ) N ;
+    - _213_ sky130_fd_sc_hd__clkbuf_4 + PLACED ( 49220 51680 ) FS ;
+    - _214_ sky130_fd_sc_hd__buf_2 + PLACED ( 41400 32640 ) N ;
+    - _215_ sky130_fd_sc_hd__nand3_1 + PLACED ( 40020 54400 ) N ;
+    - _216_ sky130_fd_sc_hd__nor2_1 + PLACED ( 39100 48960 ) FN ;
+    - _217_ sky130_fd_sc_hd__nand4_1 + PLACED ( 44160 46240 ) FS ;
+    - _218_ sky130_fd_sc_hd__buf_4 + PLACED ( 48300 48960 ) N ;
+    - _219_ sky130_fd_sc_hd__and4_1 + PLACED ( 41400 51680 ) S ;
+    - _220_ sky130_fd_sc_hd__o21a_1 + PLACED ( 36340 48960 ) N ;
+    - _221_ sky130_fd_sc_hd__inv_2 + PLACED ( 41860 54400 ) N ;
+    - _222_ sky130_fd_sc_hd__and3_1 + PLACED ( 46920 51680 ) S ;
+    - _223_ sky130_fd_sc_hd__clkbuf_4 + PLACED ( 46920 54400 ) N ;
+    - _224_ sky130_fd_sc_hd__nand2_1 + PLACED ( 40940 59840 ) FN ;
+    - _225_ sky130_fd_sc_hd__nand2_1 + PLACED ( 39100 59840 ) FN ;
+    - _226_ sky130_fd_sc_hd__a2bb2o_1 + PLACED ( 35420 54400 ) N ;
+    - _227_ sky130_fd_sc_hd__or2_1 + PLACED ( 41860 57120 ) FS ;
+    - _228_ sky130_fd_sc_hd__and3_1 + PLACED ( 44160 57120 ) S ;
+    - _229_ sky130_fd_sc_hd__mux2_1 + PLACED ( 32200 59840 ) N ;
+    - _230_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 25760 57120 ) FS ;
+    - _231_ sky130_fd_sc_hd__buf_2 + PLACED ( 52900 27200 ) N ;
+    - _232_ sky130_fd_sc_hd__nor2_1 + PLACED ( 44620 65280 ) FN ;
+    - _233_ sky130_fd_sc_hd__mux2_1 + PLACED ( 37720 62560 ) FS ;
+    - _234_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 36340 68000 ) FS ;
+    - _235_ sky130_fd_sc_hd__inv_2 + PLACED ( 42780 40800 ) FS ;
+    - _236_ sky130_fd_sc_hd__nand2_1 + PLACED ( 44160 40800 ) S ;
+    - _237_ sky130_fd_sc_hd__nor2_2 + PLACED ( 40480 27200 ) N ;
+    - _238_ sky130_fd_sc_hd__a21o_2 + PLACED ( 44620 38080 ) FN ;
+    - _239_ sky130_fd_sc_hd__nor2_2 + PLACED ( 42780 35360 ) S ;
+    - _240_ sky130_fd_sc_hd__a22o_1 + PLACED ( 24380 38080 ) FN ;
+    - _241_ sky130_fd_sc_hd__a22o_1 + PLACED ( 18860 38080 ) FN ;
+    - _242_ sky130_fd_sc_hd__a22o_1 + PLACED ( 18860 32640 ) FN ;
+    - _243_ sky130_fd_sc_hd__a22o_1 + PLACED ( 19780 35360 ) FS ;
+    - _244_ sky130_fd_sc_hd__a22o_1 + PLACED ( 18400 46240 ) S ;
+    - _245_ sky130_fd_sc_hd__a22o_1 + PLACED ( 21160 57120 ) S ;
+    - _246_ sky130_fd_sc_hd__a22o_1 + PLACED ( 19320 62560 ) S ;
+    - _247_ sky130_fd_sc_hd__a22o_1 + PLACED ( 42320 62560 ) FS ;
+    - _248_ sky130_fd_sc_hd__mux2_1 + PLACED ( 32660 78880 ) FS ;
+    - _249_ sky130_fd_sc_hd__mux2_1 + PLACED ( 32200 84320 ) S ;
+    - _250_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 36340 84320 ) FS ;
+    - _251_ sky130_fd_sc_hd__mux2_1 + PLACED ( 34040 73440 ) S ;
+    - _252_ sky130_fd_sc_hd__mux2_1 + PLACED ( 34500 76160 ) N ;
+    - _253_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 28060 73440 ) FS ;
+    - _254_ sky130_fd_sc_hd__mux2_1 + PLACED ( 53820 70720 ) N ;
+    - _255_ sky130_fd_sc_hd__mux2_1 + PLACED ( 44620 70720 ) N ;
+    - _256_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 40940 70720 ) N ;
+    - _257_ sky130_fd_sc_hd__mux2_1 + PLACED ( 46460 81600 ) FN ;
+    - _258_ sky130_fd_sc_hd__mux2_1 + PLACED ( 50140 76160 ) N ;
+    - _259_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 49680 70720 ) N ;
+    - _260_ sky130_fd_sc_hd__mux2_1 + PLACED ( 52900 78880 ) FS ;
+    - _261_ sky130_fd_sc_hd__mux2_1 + PLACED ( 51520 84320 ) FS ;
+    - _262_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 51520 78880 ) S ;
+    - _263_ sky130_fd_sc_hd__mux2_1 + PLACED ( 65320 76160 ) N ;
+    - _264_ sky130_fd_sc_hd__mux2_1 + PLACED ( 61180 76160 ) N ;
+    - _265_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 58420 78880 ) S ;
+    - _266_ sky130_fd_sc_hd__and2_1 + PLACED ( 70380 65280 ) FN ;
+    - _267_ sky130_fd_sc_hd__mux2_1 + PLACED ( 62560 68000 ) FS ;
+    - _268_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 61640 73440 ) FS ;
+    - _269_ sky130_fd_sc_hd__buf_2 + PLACED ( 71300 57120 ) FS ;
+    - _270_ sky130_fd_sc_hd__and2_1 + PLACED ( 51980 51680 ) S ;
+    - _271_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 51060 57120 ) FS ;
+    - _272_ sky130_fd_sc_hd__a21bo_1 + PLACED ( 54280 59840 ) N ;
+    - _273_ sky130_fd_sc_hd__inv_2 + PLACED ( 45080 35360 ) S ;
+    - _274_ sky130_fd_sc_hd__a21oi_1 + PLACED ( 42320 38080 ) N ;
+    - _275_ sky130_fd_sc_hd__nand2_1 + PLACED ( 39560 78880 ) FS ;
+    - _276_ sky130_fd_sc_hd__a2bb2o_1 + PLACED ( 40480 48960 ) N ;
+    - _277_ sky130_fd_sc_hd__mux2_1 + PLACED ( 29440 48960 ) N ;
+    - _278_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 23460 46240 ) FS ;
+    - _279_ sky130_fd_sc_hd__mux2_1 + PLACED ( 26680 65280 ) N ;
+    - _280_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 25300 65280 ) N ;
+    - _281_ sky130_fd_sc_hd__mux2_1 + PLACED ( 11960 21760 ) N ;
+    - _282_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 9200 16320 ) N ;
+    - _283_ sky130_fd_sc_hd__mux2_1 + PLACED ( 11040 29920 ) FS ;
+    - _284_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 8740 24480 ) FS ;
+    - _285_ sky130_fd_sc_hd__mux2_1 + PLACED ( 31740 24480 ) FS ;
+    - _286_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 28060 24480 ) FS ;
+    - _287_ sky130_fd_sc_hd__mux2_1 + PLACED ( 11040 35360 ) FS ;
+    - _288_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 8280 35360 ) FS ;
+    - _289_ sky130_fd_sc_hd__mux2_1 + PLACED ( 19320 24480 ) FS ;
+    - _290_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 18860 21760 ) N ;
+    - _291_ sky130_fd_sc_hd__mux2_1 + PLACED ( 15640 68000 ) S ;
+    - _292_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 19780 68000 ) S ;
+    - _293_ sky130_fd_sc_hd__mux2_1 + PLACED ( 73600 68000 ) FS ;
+    - _294_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 72680 65280 ) FN ;
+    - _295_ sky130_fd_sc_hd__inv_2 + PLACED ( 57500 35360 ) S ;
+    - _296_ sky130_fd_sc_hd__and4_1 + PLACED ( 57500 24480 ) FS ;
+    - _297_ sky130_fd_sc_hd__and4_1 + PLACED ( 70380 27200 ) N ;
+    - _298_ sky130_fd_sc_hd__and4_1 + PLACED ( 66700 43520 ) FN ;
+    - _299_ sky130_fd_sc_hd__and3_1 + PLACED ( 64400 43520 ) N ;
+    - _300_ sky130_fd_sc_hd__and3_1 + PLACED ( 68080 46240 ) S ;
+    - _301_ sky130_fd_sc_hd__a21oi_1 + PLACED ( 57500 40800 ) FS ;
+    - _302_ sky130_fd_sc_hd__a31o_1 + PLACED ( 56120 38080 ) N ;
+    - _303_ sky130_fd_sc_hd__o31a_1 + PLACED ( 52440 38080 ) N ;
+    - _304_ sky130_fd_sc_hd__a21o_1 + PLACED ( 59800 43520 ) N ;
+    - _305_ sky130_fd_sc_hd__o21a_1 + PLACED ( 53360 40800 ) FS ;
+    - _306_ sky130_fd_sc_hd__and3_1 + PLACED ( 65320 51680 ) FS ;
+    - _307_ sky130_fd_sc_hd__a21o_1 + PLACED ( 60720 46240 ) FS ;
+    - _308_ sky130_fd_sc_hd__nand2_1 + PLACED ( 60260 48960 ) FN ;
+    - _309_ sky130_fd_sc_hd__mux2_1 + PLACED ( 64400 57120 ) FS ;
+    - _310_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 64860 59840 ) FN ;
+    - _311_ sky130_fd_sc_hd__and3b_1 + PLACED ( 62100 51680 ) S ;
+    - _312_ sky130_fd_sc_hd__a21o_1 + PLACED ( 61640 57120 ) FS ;
+    - _313_ sky130_fd_sc_hd__and4_1 + PLACED ( 70840 43520 ) N ;
+    - _314_ sky130_fd_sc_hd__nand2_1 + PLACED ( 75440 46240 ) FS ;
+    - _315_ sky130_fd_sc_hd__nor2_1 + PLACED ( 76360 51680 ) FS ;
+    - _316_ sky130_fd_sc_hd__a21o_1 + PLACED ( 72220 48960 ) FN ;
+    - _317_ sky130_fd_sc_hd__mux2_1 + PLACED ( 72680 54400 ) FN ;
+    - _318_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 76820 54400 ) N ;
+    - _319_ sky130_fd_sc_hd__a21o_1 + PLACED ( 72680 46240 ) S ;
+    - _320_ sky130_fd_sc_hd__and2_1 + PLACED ( 74060 51680 ) FS ;
+    - _321_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 74980 48960 ) FN ;
+    - _322_ sky130_fd_sc_hd__nand3_1 + PLACED ( 68080 38080 ) N ;
+    - _323_ sky130_fd_sc_hd__or2_1 + PLACED ( 76360 35360 ) S ;
+    - _324_ sky130_fd_sc_hd__a21o_1 + PLACED ( 70840 40800 ) S ;
+    - _325_ sky130_fd_sc_hd__a2bb2o_1 + PLACED ( 72680 35360 ) FS ;
+    - _326_ sky130_fd_sc_hd__and4_1 + PLACED ( 71760 38080 ) N ;
+    - _327_ sky130_fd_sc_hd__a21o_1 + PLACED ( 75440 40800 ) S ;
+    - _328_ sky130_fd_sc_hd__and3_1 + PLACED ( 63940 21760 ) FN ;
+    - _329_ sky130_fd_sc_hd__and3_1 + PLACED ( 61640 21760 ) N ;
+    - _330_ sky130_fd_sc_hd__a21o_1 + PLACED ( 63480 24480 ) FS ;
+    - _331_ sky130_fd_sc_hd__nand2_1 + PLACED ( 59800 21760 ) FN ;
+    - _332_ sky130_fd_sc_hd__mux2_1 + PLACED ( 61640 27200 ) N ;
+    - _333_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 61640 29920 ) S ;
+    - _334_ sky130_fd_sc_hd__and3b_1 + PLACED ( 60260 19040 ) S ;
+    - _335_ sky130_fd_sc_hd__a21o_1 + PLACED ( 60720 16320 ) N ;
+    - _336_ sky130_fd_sc_hd__nand2_1 + PLACED ( 75440 24480 ) FS ;
+    - _337_ sky130_fd_sc_hd__nor2_1 + PLACED ( 70840 24480 ) S ;
+    - _338_ sky130_fd_sc_hd__a21o_1 + PLACED ( 70840 21760 ) FN ;
+    - _339_ sky130_fd_sc_hd__mux2_1 + PLACED ( 69460 19040 ) FS ;
+    - _340_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 68080 16320 ) FN ;
+    - _341_ sky130_fd_sc_hd__and3_1 + PLACED ( 67620 21760 ) N ;
+    - _342_ sky130_fd_sc_hd__a21o_1 + PLACED ( 72680 24480 ) S ;
+    - _343_ sky130_fd_sc_hd__inv_2 + PLACED ( 42780 21760 ) FN ;
+    - _344_ sky130_fd_sc_hd__a31oi_1 + PLACED ( 47840 27200 ) FN ;
+    - _345_ sky130_fd_sc_hd__a41o_1 + PLACED ( 45540 24480 ) FS ;
+    - _346_ sky130_fd_sc_hd__o31a_1 + PLACED ( 44620 21760 ) N ;
+    - _347_ sky130_fd_sc_hd__a21o_1 + PLACED ( 46000 29920 ) FS ;
+    - _348_ sky130_fd_sc_hd__a32o_1 + PLACED ( 42320 29920 ) FS ;
+    - _349_ sky130_fd_sc_hd__a21oi_1 + PLACED ( 46920 16320 ) FN ;
+    - _350_ sky130_fd_sc_hd__o211a_1 + PLACED ( 49680 24480 ) FS ;
+    - _351_ sky130_fd_sc_hd__nor2_1 + PLACED ( 50600 13600 ) FS ;
+    - _352_ sky130_fd_sc_hd__mux2_1 + PLACED ( 46000 19040 ) FS ;
+    - _353_ sky130_fd_sc_hd__clkbuf_1 + PLACED ( 42320 16320 ) N ;
+    - _354_ sky130_fd_sc_hd__inv_2 + PLACED ( 74980 27200 ) N ;
+    - _355_ sky130_fd_sc_hd__buf_4 + PLACED ( 15640 48960 ) N ;
+    - _356_ sky130_fd_sc_hd__buf_4 + PLACED ( 36340 32640 ) N ;
+    - _357_ sky130_fd_sc_hd__inv_2 + PLACED ( 44620 16320 ) N ;
+    - _358_ sky130_fd_sc_hd__inv_2 + PLACED ( 53820 13600 ) FS ;
+    - _359_ sky130_fd_sc_hd__inv_2 + PLACED ( 38180 27200 ) N ;
+    - _360_ sky130_fd_sc_hd__inv_2 + PLACED ( 43700 19040 ) S ;
+    - _361_ sky130_fd_sc_hd__inv_2 + PLACED ( 79580 19040 ) FS ;
+    - _362_ sky130_fd_sc_hd__inv_2 + PLACED ( 71300 10880 ) FN ;
+    - _363_ sky130_fd_sc_hd__inv_2 + PLACED ( 63940 10880 ) N ;
+    - _364_ sky130_fd_sc_hd__inv_2 + PLACED ( 70380 32640 ) FN ;
+    - _365_ sky130_fd_sc_hd__inv_2 + PLACED ( 80960 35360 ) FS ;
+    - _366_ sky130_fd_sc_hd__inv_2 + PLACED ( 81880 32640 ) N ;
+    - _367_ sky130_fd_sc_hd__buf_4 + PLACED ( 32660 32640 ) N ;
+    - _368_ sky130_fd_sc_hd__inv_2 + PLACED ( 83260 46240 ) FS ;
+    - _369_ sky130_fd_sc_hd__inv_2 + PLACED ( 83260 57120 ) FS ;
+    - _370_ sky130_fd_sc_hd__inv_2 + PLACED ( 68080 54400 ) FN ;
+    - _371_ sky130_fd_sc_hd__inv_2 + PLACED ( 70380 59840 ) FN ;
+    - _372_ sky130_fd_sc_hd__inv_2 + PLACED ( 55200 46240 ) FS ;
+    - _373_ sky130_fd_sc_hd__inv_2 + PLACED ( 51980 32640 ) N ;
+    - _374_ sky130_fd_sc_hd__inv_2 + PLACED ( 54280 51680 ) FS ;
+    - _375_ sky130_fd_sc_hd__inv_2 + PLACED ( 81420 29920 ) FS ;
+    - _376_ sky130_fd_sc_hd__inv_2 + PLACED ( 83260 65280 ) N ;
+    - _377_ sky130_fd_sc_hd__inv_2 + PLACED ( 23460 65280 ) FN ;
+    - _378_ sky130_fd_sc_hd__buf_4 + PLACED ( 11500 48960 ) FN ;
+    - _379_ sky130_fd_sc_hd__inv_2 + PLACED ( 23000 21760 ) N ;
+    - _380_ sky130_fd_sc_hd__inv_2 + PLACED ( 11040 40800 ) S ;
+    - _381_ sky130_fd_sc_hd__inv_2 + PLACED ( 35880 21760 ) FN ;
+    - _382_ sky130_fd_sc_hd__inv_2 + PLACED ( 11500 24480 ) S ;
+    - _383_ sky130_fd_sc_hd__inv_2 + PLACED ( 16100 19040 ) S ;
+    - _384_ sky130_fd_sc_hd__inv_2 + PLACED ( 31740 68000 ) S ;
+    - _385_ sky130_fd_sc_hd__inv_2 + PLACED ( 24840 46240 ) FS ;
+    - _386_ sky130_fd_sc_hd__inv_2 + PLACED ( 36800 35360 ) FS ;
+    - _387_ sky130_fd_sc_hd__inv_2 + PLACED ( 58420 59840 ) N ;
+    - _388_ sky130_fd_sc_hd__inv_2 + PLACED ( 66700 68000 ) FS ;
+    - _389_ sky130_fd_sc_hd__buf_4 + PLACED ( 15640 51680 ) FS ;
+    - _390_ sky130_fd_sc_hd__inv_2 + PLACED ( 62100 81600 ) N ;
+    - _391_ sky130_fd_sc_hd__inv_2 + PLACED ( 59800 81600 ) FN ;
+    - _392_ sky130_fd_sc_hd__inv_2 + PLACED ( 57500 73440 ) S ;
+    - _393_ sky130_fd_sc_hd__inv_2 + PLACED ( 44620 76160 ) FN ;
+    - _394_ sky130_fd_sc_hd__inv_2 + PLACED ( 29900 73440 ) FS ;
+    - _395_ sky130_fd_sc_hd__inv_2 + PLACED ( 40940 81600 ) FN ;
+    - _396_ sky130_fd_sc_hd__inv_2 + PLACED ( 54740 62560 ) S ;
+    - _397_ sky130_fd_sc_hd__inv_2 + PLACED ( 15180 59840 ) FN ;
+    - _398_ sky130_fd_sc_hd__inv_2 + PLACED ( 17020 54400 ) N ;
+    - _399_ sky130_fd_sc_hd__inv_2 + PLACED ( 18860 48960 ) FN ;
+    - _400_ sky130_fd_sc_hd__inv_2 + PLACED ( 28520 29920 ) FS ;
+    - _401_ sky130_fd_sc_hd__inv_2 + PLACED ( 26220 29920 ) S ;
+    - _402_ sky130_fd_sc_hd__inv_2 + PLACED ( 20700 43520 ) FN ;
+    - _403_ sky130_fd_sc_hd__inv_2 + PLACED ( 31740 40800 ) S ;
+    - _404_ sky130_fd_sc_hd__inv_2 + PLACED ( 36340 62560 ) FS ;
+    - _405_ sky130_fd_sc_hd__inv_2 + PLACED ( 27140 57120 ) FS ;
+    - _406_ sky130_fd_sc_hd__inv_2 + PLACED ( 34040 54400 ) N ;
+    - _407_ sky130_fd_sc_hd__inv_2 + PLACED ( 34960 43520 ) N ;
+    - _408_ sky130_fd_sc_hd__dfrtp_4 + PLACED ( 39560 13600 ) FS ;
+    - _409_ sky130_fd_sc_hd__dfrtp_2 + PLACED ( 48760 16320 ) N ;
+    - _410_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 33120 29920 ) FS ;
+    - _411_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 34500 19040 ) FS ;
+    - _412_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 74520 21760 ) N ;
+    - _413_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 68080 13600 ) S ;
+    - _414_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 58880 13600 ) FS ;
+    - _415_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 60720 32640 ) N ;
+    - _416_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 76360 38080 ) N ;
+    - _417_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 72680 32640 ) N ;
+    - _418_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 76360 48960 ) N ;
+    - _419_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 73600 57120 ) FS ;
+    - _420_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 58880 54400 ) N ;
+    - _421_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 67160 62560 ) S ;
+    - _422_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 50600 43520 ) N ;
+    - _423_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 47380 35360 ) FS ;
+    - _424_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 49680 54400 ) N ;
+    - _425_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 76360 27200 ) N ;
+    - _426_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 74060 65280 ) N ;
+    - _427_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 18860 70720 ) FN ;
+    - _428_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 17940 19040 ) FS ;
+    - _429_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 6900 38080 ) N ;
+    - _430_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 26680 21760 ) N ;
+    - _431_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 6900 27200 ) N ;
+    - _432_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 6900 19040 ) FS ;
+    - _433_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 22080 68000 ) FS ;
+    - _434_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 20240 48960 ) N ;
+    - _435_ sky130_fd_sc_hd__dfrtp_2 + PLACED ( 32660 38080 ) N ;
+    - _436_ sky130_fd_sc_hd__dfstp_1 + PLACED ( 57500 62560 ) FS ;
+    - _437_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 59800 70720 ) N ;
+    - _438_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 59800 78880 ) S ;
+    - _439_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 50600 81600 ) N ;
+    - _440_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 47840 73440 ) FS ;
+    - _441_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 38640 73440 ) FS ;
+    - _442_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 25300 76160 ) N ;
+    - _443_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 31740 81600 ) N ;
+    - _444_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 45540 62560 ) FS ;
+    - _445_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 10120 62560 ) FS ;
+    - _446_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 11960 57120 ) FS ;
+    - _447_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 9200 46240 ) FS ;
+    - _448_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 23460 32640 ) N ;
+    - _449_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 17020 29920 ) FS ;
+    - _450_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 12880 40800 ) S ;
+    - _451_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 22080 40800 ) FS ;
+    - _452_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 34040 65280 ) N ;
+    - _453_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 23000 59840 ) N ;
+    - _454_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 31740 57120 ) FS ;
+    - _455_ sky130_fd_sc_hd__dfrtp_1 + PLACED ( 31740 46240 ) FS ;
+    - input1 sky130_fd_sc_hd__buf_1 + SOURCE TIMING + PLACED ( 84180 87040 ) FN ;
+    - input10 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 9660 87040 ) FN ;
+    - input11 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 84180 51680 ) FS ;
+    - input2 sky130_fd_sc_hd__buf_1 + SOURCE TIMING + PLACED ( 6900 48960 ) N ;
+    - input3 sky130_fd_sc_hd__buf_1 + SOURCE TIMING + PLACED ( 29440 10880 ) N ;
+    - input4 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 84180 62560 ) FS ;
+    - input5 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 84180 78880 ) FS ;
+    - input6 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 6900 78880 ) S ;
+    - input7 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 51980 87040 ) N ;
+    - input8 sky130_fd_sc_hd__buf_1 + SOURCE TIMING + PLACED ( 61640 10880 ) FN ;
+    - input9 sky130_fd_sc_hd__clkbuf_1 + SOURCE TIMING + PLACED ( 6900 65280 ) FN ;
+    - max_cap25 sky130_fd_sc_hd__buf_1 + SOURCE TIMING + PLACED ( 50600 40800 ) S ;
+    - output12 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 83720 29920 ) FS ;
+    - output13 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 70380 87040 ) N ;
+    - output14 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 80040 10880 ) FN ;
+    - output15 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 23000 87040 ) FN ;
+    - output16 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 80040 87040 ) N ;
+    - output17 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 6900 87040 ) FN ;
+    - output18 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 45540 10880 ) N ;
+    - output19 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 6900 13600 ) S ;
+    - output20 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 77740 10880 ) N ;
+    - output21 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 6900 10880 ) FN ;
+    - output22 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 13340 10880 ) FN ;
+    - output23 sky130_fd_sc_hd__clkbuf_4 + SOURCE TIMING + PLACED ( 39100 87040 ) N ;
+    - output24 sky130_fd_sc_hd__buf_2 + SOURCE TIMING + PLACED ( 83720 13600 ) FS ;
+END COMPONENTS
+PINS 27 ;
+    - VGND + NET VGND + SPECIAL + DIRECTION INOUT + USE GROUND
+      + PORT
+        + LAYER met5 ( -40950 -800 ) ( 40950 800 )
+        + LAYER met5 ( -40950 -25800 ) ( 40950 -24200 )
+        + LAYER met5 ( -40950 -50800 ) ( 40950 -49200 )
+        + LAYER met4 ( 28110 -70190 ) ( 29710 9170 )
+        + LAYER met4 ( 3110 -70190 ) ( 4710 9170 )
+        + LAYER met4 ( -21890 -70190 ) ( -20290 9170 )
+        + FIXED ( 46230 80830 ) N ;
+    - VPWR + NET VPWR + SPECIAL + DIRECTION INOUT + USE POWER
+      + PORT
+        + LAYER met5 ( -40950 -800 ) ( 40950 800 )
+        + LAYER met5 ( -40950 -25800 ) ( 40950 -24200 )
+        + LAYER met5 ( -40950 -50800 ) ( 40950 -49200 )
+        + LAYER met4 ( 24810 -66890 ) ( 26410 12470 )
+        + LAYER met4 ( -190 -66890 ) ( 1410 12470 )
+        + LAYER met4 ( -25190 -66890 ) ( -23590 12470 )
+        + FIXED ( 46230 77530 ) N ;
+    - busy + NET busy + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 30940 ) N ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 30940 ) N ;
+    - cs + NET cs + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 67850 101290 ) N ;
+    - done + NET done + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 90390 2000 ) N ;
+    - miso + NET miso + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 95540 ) N ;
+    - mosi + NET mosi + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 22770 101290 ) N ;
+    - rst + NET rst + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 47940 ) N ;
+    - rx_data[0] + NET rx_data[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 83950 101290 ) N ;
+    - rx_data[1] + NET rx_data[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 6670 101290 ) N ;
+    - rx_data[2] + NET rx_data[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 45310 2000 ) N ;
+    - rx_data[3] + NET rx_data[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 13940 ) N ;
+    - rx_data[4] + NET rx_data[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 77510 2000 ) N ;
+    - rx_data[5] + NET rx_data[5] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 230 2000 ) N ;
+    - rx_data[6] + NET rx_data[6] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 13110 2000 ) N ;
+    - rx_data[7] + NET rx_data[7] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 38870 101290 ) N ;
+    - sclk + NET sclk + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 13940 ) N ;
+    - start + NET start + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 29210 2000 ) N ;
+    - tx_data[0] + NET tx_data[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 64940 ) N ;
+    - tx_data[1] + NET tx_data[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 78540 ) N ;
+    - tx_data[2] + NET tx_data[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 78540 ) N ;
+    - tx_data[3] + NET tx_data[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 51750 101290 ) N ;
+    - tx_data[4] + NET tx_data[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 61410 2000 ) N ;
+    - tx_data[5] + NET tx_data[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 64940 ) N ;
+    - tx_data[6] + NET tx_data[6] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 95540 ) N ;
+    - tx_data[7] + NET tx_data[7] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 90570 47940 ) N ;
+END PINS
+SPECIALNETS 2 ;
+    - VGND ( PIN VGND ) ( * VNB ) ( * VGND ) + USE GROUND
+      + ROUTED met1 480 + SHAPE FOLLOWPIN ( 5520 87040 ) ( 86940 87040 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 81600 ) ( 86940 81600 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 76160 ) ( 86940 76160 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 70720 ) ( 86940 70720 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 65280 ) ( 86940 65280 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 59840 ) ( 86940 59840 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 54400 ) ( 86940 54400 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 48960 ) ( 86940 48960 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 43520 ) ( 86940 43520 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 38080 ) ( 86940 38080 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 32640 ) ( 86940 32640 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 27200 ) ( 86940 27200 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 21760 ) ( 86940 21760 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 16320 ) ( 86940 16320 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 10880 ) ( 86940 10880 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 80830 ) ( 87180 80830 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 55830 ) ( 87180 55830 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 30830 ) ( 87180 30830 )
+      NEW met4 1600 + SHAPE STRIPE ( 75140 10640 ) ( 75140 90000 )
+      NEW met4 1600 + SHAPE STRIPE ( 50140 10640 ) ( 50140 90000 )
+      NEW met4 1600 + SHAPE STRIPE ( 25140 10640 ) ( 25140 90000 )
+      NEW met4 0 + SHAPE STRIPE ( 75140 80830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 75140 55830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 75140 30830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 50140 80830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 50140 55830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 50140 30830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 25140 80830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 25140 55830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 25140 30830 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met3 330 + SHAPE STRIPE ( 74350 87040 ) ( 75930 87040 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 87040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 87040 ) ( 75910 87040 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 87040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 87040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 81600 ) ( 75930 81600 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 81600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 81600 ) ( 75910 81600 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 81600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 81600 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 76160 ) ( 75930 76160 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 76160 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 76160 ) ( 75910 76160 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 76160 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 76160 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 70720 ) ( 75930 70720 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 70720 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 70720 ) ( 75910 70720 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 70720 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 70720 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 65280 ) ( 75930 65280 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 65280 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 65280 ) ( 75910 65280 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 65280 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 65280 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 59840 ) ( 75930 59840 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 59840 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 59840 ) ( 75910 59840 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 59840 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 59840 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 54400 ) ( 75930 54400 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 54400 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 54400 ) ( 75910 54400 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 54400 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 54400 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 48960 ) ( 75930 48960 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 48960 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 48960 ) ( 75910 48960 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 48960 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 48960 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 43520 ) ( 75930 43520 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 43520 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 43520 ) ( 75910 43520 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 43520 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 43520 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 38080 ) ( 75930 38080 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 38080 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 38080 ) ( 75910 38080 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 38080 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 38080 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 32640 ) ( 75930 32640 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 32640 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 32640 ) ( 75910 32640 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 32640 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 32640 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 27200 ) ( 75930 27200 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 27200 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 27200 ) ( 75910 27200 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 27200 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 27200 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 21760 ) ( 75930 21760 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 21760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 21760 ) ( 75910 21760 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 21760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 21760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 16320 ) ( 75930 16320 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 16320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 16320 ) ( 75910 16320 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 16320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 16320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 74350 10880 ) ( 75930 10880 )
+      NEW met3 0 + SHAPE STRIPE ( 75140 10880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 74370 10880 ) ( 75910 10880 )
+      NEW met2 0 + SHAPE STRIPE ( 75140 10880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 75140 10880 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 87040 ) ( 50930 87040 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 87040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 87040 ) ( 50910 87040 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 87040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 87040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 81600 ) ( 50930 81600 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 81600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 81600 ) ( 50910 81600 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 81600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 81600 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 76160 ) ( 50930 76160 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 76160 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 76160 ) ( 50910 76160 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 76160 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 76160 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 70720 ) ( 50930 70720 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 70720 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 70720 ) ( 50910 70720 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 70720 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 70720 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 65280 ) ( 50930 65280 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 65280 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 65280 ) ( 50910 65280 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 65280 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 65280 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 59840 ) ( 50930 59840 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 59840 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 59840 ) ( 50910 59840 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 59840 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 59840 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 54400 ) ( 50930 54400 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 54400 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 54400 ) ( 50910 54400 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 54400 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 54400 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 48960 ) ( 50930 48960 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 48960 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 48960 ) ( 50910 48960 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 48960 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 48960 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 43520 ) ( 50930 43520 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 43520 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 43520 ) ( 50910 43520 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 43520 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 43520 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 38080 ) ( 50930 38080 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 38080 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 38080 ) ( 50910 38080 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 38080 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 38080 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 32640 ) ( 50930 32640 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 32640 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 32640 ) ( 50910 32640 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 32640 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 32640 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 27200 ) ( 50930 27200 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 27200 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 27200 ) ( 50910 27200 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 27200 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 27200 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 21760 ) ( 50930 21760 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 21760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 21760 ) ( 50910 21760 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 21760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 21760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 16320 ) ( 50930 16320 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 16320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 16320 ) ( 50910 16320 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 16320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 16320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 49350 10880 ) ( 50930 10880 )
+      NEW met3 0 + SHAPE STRIPE ( 50140 10880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 49370 10880 ) ( 50910 10880 )
+      NEW met2 0 + SHAPE STRIPE ( 50140 10880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 50140 10880 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 87040 ) ( 25930 87040 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 87040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 87040 ) ( 25910 87040 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 87040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 87040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 81600 ) ( 25930 81600 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 81600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 81600 ) ( 25910 81600 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 81600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 81600 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 76160 ) ( 25930 76160 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 76160 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 76160 ) ( 25910 76160 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 76160 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 76160 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 70720 ) ( 25930 70720 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 70720 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 70720 ) ( 25910 70720 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 70720 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 70720 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 65280 ) ( 25930 65280 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 65280 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 65280 ) ( 25910 65280 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 65280 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 65280 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 59840 ) ( 25930 59840 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 59840 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 59840 ) ( 25910 59840 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 59840 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 59840 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 54400 ) ( 25930 54400 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 54400 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 54400 ) ( 25910 54400 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 54400 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 54400 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 48960 ) ( 25930 48960 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 48960 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 48960 ) ( 25910 48960 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 48960 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 48960 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 43520 ) ( 25930 43520 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 43520 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 43520 ) ( 25910 43520 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 43520 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 43520 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 38080 ) ( 25930 38080 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 38080 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 38080 ) ( 25910 38080 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 38080 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 38080 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 32640 ) ( 25930 32640 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 32640 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 32640 ) ( 25910 32640 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 32640 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 32640 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 27200 ) ( 25930 27200 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 27200 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 27200 ) ( 25910 27200 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 27200 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 27200 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 21760 ) ( 25930 21760 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 21760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 21760 ) ( 25910 21760 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 21760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 21760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 16320 ) ( 25930 16320 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 16320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 16320 ) ( 25910 16320 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 16320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 16320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 24350 10880 ) ( 25930 10880 )
+      NEW met3 0 + SHAPE STRIPE ( 25140 10880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 24370 10880 ) ( 25910 10880 )
+      NEW met2 0 + SHAPE STRIPE ( 25140 10880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 25140 10880 ) via2_3_1600_480_1_5_320_320 ;
+    - VPWR ( PIN VPWR ) ( * VPB ) ( * VPWR ) + USE POWER
+      + ROUTED met1 480 + SHAPE FOLLOWPIN ( 5520 89760 ) ( 86940 89760 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 84320 ) ( 86940 84320 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 78880 ) ( 86940 78880 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 73440 ) ( 86940 73440 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 68000 ) ( 86940 68000 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 62560 ) ( 86940 62560 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 57120 ) ( 86940 57120 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 51680 ) ( 86940 51680 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 46240 ) ( 86940 46240 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 40800 ) ( 86940 40800 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 35360 ) ( 86940 35360 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 29920 ) ( 86940 29920 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 24480 ) ( 86940 24480 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 19040 ) ( 86940 19040 )
+      NEW met1 480 + SHAPE FOLLOWPIN ( 5520 13600 ) ( 86940 13600 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 77530 ) ( 87180 77530 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 52530 ) ( 87180 52530 )
+      NEW met5 1600 + SHAPE STRIPE ( 5280 27530 ) ( 87180 27530 )
+      NEW met4 1600 + SHAPE STRIPE ( 71840 10640 ) ( 71840 90000 )
+      NEW met4 1600 + SHAPE STRIPE ( 46840 10640 ) ( 46840 90000 )
+      NEW met4 1600 + SHAPE STRIPE ( 21840 10640 ) ( 21840 90000 )
+      NEW met4 0 + SHAPE STRIPE ( 71840 77530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 71840 52530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 71840 27530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 46840 77530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 46840 52530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 46840 27530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 21840 77530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 21840 52530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met4 0 + SHAPE STRIPE ( 21840 27530 ) via5_6_1600_1600_1_1_1600_1600
+      NEW met3 330 + SHAPE STRIPE ( 71050 89760 ) ( 72630 89760 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 89760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 89760 ) ( 72610 89760 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 89760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 89760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 84320 ) ( 72630 84320 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 84320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 84320 ) ( 72610 84320 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 84320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 84320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 78880 ) ( 72630 78880 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 78880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 78880 ) ( 72610 78880 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 78880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 78880 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 73440 ) ( 72630 73440 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 73440 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 73440 ) ( 72610 73440 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 73440 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 73440 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 68000 ) ( 72630 68000 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 68000 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 68000 ) ( 72610 68000 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 68000 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 68000 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 62560 ) ( 72630 62560 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 62560 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 62560 ) ( 72610 62560 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 62560 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 62560 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 57120 ) ( 72630 57120 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 57120 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 57120 ) ( 72610 57120 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 57120 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 57120 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 51680 ) ( 72630 51680 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 51680 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 51680 ) ( 72610 51680 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 51680 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 51680 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 46240 ) ( 72630 46240 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 46240 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 46240 ) ( 72610 46240 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 46240 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 46240 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 40800 ) ( 72630 40800 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 40800 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 40800 ) ( 72610 40800 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 40800 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 40800 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 35360 ) ( 72630 35360 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 35360 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 35360 ) ( 72610 35360 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 35360 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 35360 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 29920 ) ( 72630 29920 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 29920 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 29920 ) ( 72610 29920 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 29920 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 29920 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 24480 ) ( 72630 24480 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 24480 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 24480 ) ( 72610 24480 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 24480 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 24480 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 19040 ) ( 72630 19040 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 19040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 19040 ) ( 72610 19040 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 19040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 19040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 71050 13600 ) ( 72630 13600 )
+      NEW met3 0 + SHAPE STRIPE ( 71840 13600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 71070 13600 ) ( 72610 13600 )
+      NEW met2 0 + SHAPE STRIPE ( 71840 13600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 71840 13600 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 89760 ) ( 47630 89760 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 89760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 89760 ) ( 47610 89760 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 89760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 89760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 84320 ) ( 47630 84320 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 84320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 84320 ) ( 47610 84320 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 84320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 84320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 78880 ) ( 47630 78880 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 78880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 78880 ) ( 47610 78880 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 78880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 78880 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 73440 ) ( 47630 73440 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 73440 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 73440 ) ( 47610 73440 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 73440 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 73440 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 68000 ) ( 47630 68000 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 68000 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 68000 ) ( 47610 68000 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 68000 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 68000 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 62560 ) ( 47630 62560 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 62560 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 62560 ) ( 47610 62560 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 62560 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 62560 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 57120 ) ( 47630 57120 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 57120 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 57120 ) ( 47610 57120 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 57120 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 57120 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 51680 ) ( 47630 51680 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 51680 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 51680 ) ( 47610 51680 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 51680 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 51680 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 46240 ) ( 47630 46240 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 46240 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 46240 ) ( 47610 46240 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 46240 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 46240 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 40800 ) ( 47630 40800 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 40800 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 40800 ) ( 47610 40800 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 40800 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 40800 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 35360 ) ( 47630 35360 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 35360 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 35360 ) ( 47610 35360 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 35360 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 35360 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 29920 ) ( 47630 29920 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 29920 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 29920 ) ( 47610 29920 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 29920 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 29920 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 24480 ) ( 47630 24480 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 24480 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 24480 ) ( 47610 24480 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 24480 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 24480 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 19040 ) ( 47630 19040 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 19040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 19040 ) ( 47610 19040 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 19040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 19040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 46050 13600 ) ( 47630 13600 )
+      NEW met3 0 + SHAPE STRIPE ( 46840 13600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 46070 13600 ) ( 47610 13600 )
+      NEW met2 0 + SHAPE STRIPE ( 46840 13600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 46840 13600 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 89760 ) ( 22630 89760 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 89760 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 89760 ) ( 22610 89760 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 89760 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 89760 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 84320 ) ( 22630 84320 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 84320 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 84320 ) ( 22610 84320 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 84320 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 84320 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 78880 ) ( 22630 78880 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 78880 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 78880 ) ( 22610 78880 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 78880 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 78880 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 73440 ) ( 22630 73440 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 73440 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 73440 ) ( 22610 73440 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 73440 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 73440 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 68000 ) ( 22630 68000 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 68000 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 68000 ) ( 22610 68000 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 68000 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 68000 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 62560 ) ( 22630 62560 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 62560 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 62560 ) ( 22610 62560 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 62560 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 62560 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 57120 ) ( 22630 57120 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 57120 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 57120 ) ( 22610 57120 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 57120 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 57120 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 51680 ) ( 22630 51680 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 51680 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 51680 ) ( 22610 51680 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 51680 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 51680 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 46240 ) ( 22630 46240 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 46240 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 46240 ) ( 22610 46240 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 46240 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 46240 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 40800 ) ( 22630 40800 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 40800 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 40800 ) ( 22610 40800 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 40800 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 40800 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 35360 ) ( 22630 35360 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 35360 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 35360 ) ( 22610 35360 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 35360 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 35360 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 29920 ) ( 22630 29920 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 29920 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 29920 ) ( 22610 29920 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 29920 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 29920 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 24480 ) ( 22630 24480 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 24480 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 24480 ) ( 22610 24480 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 24480 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 24480 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 19040 ) ( 22630 19040 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 19040 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 19040 ) ( 22610 19040 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 19040 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 19040 ) via2_3_1600_480_1_5_320_320
+      NEW met3 330 + SHAPE STRIPE ( 21050 13600 ) ( 22630 13600 )
+      NEW met3 0 + SHAPE STRIPE ( 21840 13600 ) via4_5_1600_480_1_4_400_400
+      NEW met2 370 + SHAPE STRIPE ( 21070 13600 ) ( 22610 13600 )
+      NEW met2 0 + SHAPE STRIPE ( 21840 13600 ) via3_4_1600_480_1_4_400_400
+      NEW met1 0 + SHAPE STRIPE ( 21840 13600 ) via2_3_1600_480_1_5_320_320 ;
+END SPECIALNETS
+NETS 289 ;
+    - _000_ ( _424_ D ) ( _272_ B1_N ) ( _271_ X ) + USE SIGNAL ;
+    - _001_ ( _425_ D ) ( _354_ Y ) + USE SIGNAL ;
+    - _002_ ( _408_ RESET_B ) ( _357_ Y ) + USE SIGNAL ;
+    - _003_ ( _409_ RESET_B ) ( _358_ Y ) + USE SIGNAL ;
+    - _004_ ( _410_ RESET_B ) ( _359_ Y ) + USE SIGNAL ;
+    - _005_ ( _411_ RESET_B ) ( _360_ Y ) + USE SIGNAL ;
+    - _006_ ( _412_ RESET_B ) ( _361_ Y ) + USE SIGNAL ;
+    - _007_ ( _413_ RESET_B ) ( _362_ Y ) + USE SIGNAL ;
+    - _008_ ( _414_ RESET_B ) ( _363_ Y ) + USE SIGNAL ;
+    - _009_ ( _415_ RESET_B ) ( _364_ Y ) + USE SIGNAL ;
+    - _010_ ( _416_ RESET_B ) ( _365_ Y ) + USE SIGNAL ;
+    - _011_ ( _417_ RESET_B ) ( _366_ Y ) + USE SIGNAL ;
+    - _012_ ( _418_ RESET_B ) ( _368_ Y ) + USE SIGNAL ;
+    - _013_ ( _419_ RESET_B ) ( _369_ Y ) + USE SIGNAL ;
+    - _014_ ( _420_ RESET_B ) ( _370_ Y ) + USE SIGNAL ;
+    - _015_ ( _421_ RESET_B ) ( _371_ Y ) + USE SIGNAL ;
+    - _016_ ( _422_ RESET_B ) ( _372_ Y ) + USE SIGNAL ;
+    - _017_ ( _423_ RESET_B ) ( _373_ Y ) + USE SIGNAL ;
+    - _018_ ( _424_ RESET_B ) ( _374_ Y ) + USE SIGNAL ;
+    - _019_ ( _425_ RESET_B ) ( _375_ Y ) + USE SIGNAL ;
+    - _020_ ( _426_ RESET_B ) ( _376_ Y ) + USE SIGNAL ;
+    - _021_ ( _427_ RESET_B ) ( _377_ Y ) + USE SIGNAL ;
+    - _022_ ( _428_ RESET_B ) ( _379_ Y ) + USE SIGNAL ;
+    - _023_ ( _429_ RESET_B ) ( _380_ Y ) + USE SIGNAL ;
+    - _024_ ( _430_ RESET_B ) ( _381_ Y ) + USE SIGNAL ;
+    - _025_ ( _431_ RESET_B ) ( _382_ Y ) + USE SIGNAL ;
+    - _026_ ( _432_ RESET_B ) ( _383_ Y ) + USE SIGNAL ;
+    - _027_ ( _433_ RESET_B ) ( _384_ Y ) + USE SIGNAL ;
+    - _028_ ( _434_ RESET_B ) ( _385_ Y ) + USE SIGNAL ;
+    - _029_ ( _435_ RESET_B ) ( _386_ Y ) + USE SIGNAL ;
+    - _030_ ( _436_ SET_B ) ( _387_ Y ) + USE SIGNAL ;
+    - _031_ ( _437_ RESET_B ) ( _388_ Y ) + USE SIGNAL ;
+    - _032_ ( _438_ RESET_B ) ( _390_ Y ) + USE SIGNAL ;
+    - _033_ ( _439_ RESET_B ) ( _391_ Y ) + USE SIGNAL ;
+    - _034_ ( _440_ RESET_B ) ( _392_ Y ) + USE SIGNAL ;
+    - _035_ ( _441_ RESET_B ) ( _393_ Y ) + USE SIGNAL ;
+    - _036_ ( _442_ RESET_B ) ( _394_ Y ) + USE SIGNAL ;
+    - _037_ ( _443_ RESET_B ) ( _395_ Y ) + USE SIGNAL ;
+    - _038_ ( _444_ RESET_B ) ( _396_ Y ) + USE SIGNAL ;
+    - _039_ ( _445_ RESET_B ) ( _397_ Y ) + USE SIGNAL ;
+    - _040_ ( _446_ RESET_B ) ( _398_ Y ) + USE SIGNAL ;
+    - _041_ ( _447_ RESET_B ) ( _399_ Y ) + USE SIGNAL ;
+    - _042_ ( _448_ RESET_B ) ( _400_ Y ) + USE SIGNAL ;
+    - _043_ ( _449_ RESET_B ) ( _401_ Y ) + USE SIGNAL ;
+    - _044_ ( _450_ RESET_B ) ( _402_ Y ) + USE SIGNAL ;
+    - _045_ ( _451_ RESET_B ) ( _403_ Y ) + USE SIGNAL ;
+    - _046_ ( _452_ RESET_B ) ( _404_ Y ) + USE SIGNAL ;
+    - _047_ ( _453_ RESET_B ) ( _405_ Y ) + USE SIGNAL ;
+    - _048_ ( _454_ RESET_B ) ( _406_ Y ) + USE SIGNAL ;
+    - _049_ ( _455_ RESET_B ) ( _407_ Y ) + USE SIGNAL ;
+    - _050_ ( _408_ D ) ( _353_ X ) + USE SIGNAL ;
+    - _051_ ( _409_ D ) ( _351_ Y ) + USE SIGNAL ;
+    - _052_ ( _410_ D ) ( _348_ X ) + USE SIGNAL ;
+    - _053_ ( _411_ D ) ( _346_ X ) + USE SIGNAL ;
+    - _054_ ( _412_ D ) ( _342_ X ) + USE SIGNAL ;
+    - _055_ ( _413_ D ) ( _340_ X ) + USE SIGNAL ;
+    - _056_ ( _414_ D ) ( _335_ X ) + USE SIGNAL ;
+    - _057_ ( _415_ D ) ( _333_ X ) + USE SIGNAL ;
+    - _058_ ( _416_ D ) ( _327_ X ) + USE SIGNAL ;
+    - _059_ ( _417_ D ) ( _325_ X ) + USE SIGNAL ;
+    - _060_ ( _418_ D ) ( _321_ X ) + USE SIGNAL ;
+    - _061_ ( _419_ D ) ( _318_ X ) + USE SIGNAL ;
+    - _062_ ( _420_ D ) ( _312_ X ) + USE SIGNAL ;
+    - _063_ ( _421_ D ) ( _310_ X ) + USE SIGNAL ;
+    - _064_ ( _422_ D ) ( _305_ X ) + USE SIGNAL ;
+    - _065_ ( _423_ D ) ( _303_ X ) + USE SIGNAL ;
+    - _066_ ( _426_ D ) ( _294_ X ) + USE SIGNAL ;
+    - _067_ ( _427_ D ) ( _292_ X ) + USE SIGNAL ;
+    - _068_ ( _428_ D ) ( _290_ X ) + USE SIGNAL ;
+    - _069_ ( _429_ D ) ( _288_ X ) + USE SIGNAL ;
+    - _070_ ( _430_ D ) ( _286_ X ) + USE SIGNAL ;
+    - _071_ ( _431_ D ) ( _284_ X ) + USE SIGNAL ;
+    - _072_ ( _432_ D ) ( _282_ X ) + USE SIGNAL ;
+    - _073_ ( _433_ D ) ( _280_ X ) + USE SIGNAL ;
+    - _074_ ( _434_ D ) ( _278_ X ) + USE SIGNAL ;
+    - _075_ ( _435_ D ) ( _274_ Y ) + USE SIGNAL ;
+    - _076_ ( _436_ D ) ( _272_ X ) + USE SIGNAL ;
+    - _077_ ( _437_ D ) ( _268_ X ) + USE SIGNAL ;
+    - _078_ ( _438_ D ) ( _265_ X ) + USE SIGNAL ;
+    - _079_ ( _439_ D ) ( _262_ X ) + USE SIGNAL ;
+    - _080_ ( _440_ D ) ( _259_ X ) + USE SIGNAL ;
+    - _081_ ( _441_ D ) ( _256_ X ) + USE SIGNAL ;
+    - _082_ ( _442_ D ) ( _253_ X ) + USE SIGNAL ;
+    - _083_ ( _443_ D ) ( _250_ X ) + USE SIGNAL ;
+    - _084_ ( _444_ D ) ( _247_ X ) + USE SIGNAL ;
+    - _085_ ( _445_ D ) ( _246_ X ) + USE SIGNAL ;
+    - _086_ ( _446_ D ) ( _245_ X ) + USE SIGNAL ;
+    - _087_ ( _447_ D ) ( _244_ X ) + USE SIGNAL ;
+    - _088_ ( _448_ D ) ( _243_ X ) + USE SIGNAL ;
+    - _089_ ( _449_ D ) ( _242_ X ) + USE SIGNAL ;
+    - _090_ ( _450_ D ) ( _241_ X ) + USE SIGNAL ;
+    - _091_ ( _451_ D ) ( _240_ X ) + USE SIGNAL ;
+    - _092_ ( _452_ D ) ( _234_ X ) + USE SIGNAL ;
+    - _093_ ( _453_ D ) ( _230_ X ) + USE SIGNAL ;
+    - _094_ ( _454_ D ) ( _226_ X ) + USE SIGNAL ;
+    - _095_ ( _455_ D ) ( _220_ X ) + USE SIGNAL ;
+    - _096_ ( _350_ B1 ) ( _331_ A ) ( _308_ A ) ( _270_ A ) ( _222_ A ) ( _212_ A ) ( _204_ X ) + USE SIGNAL ;
+    - _097_ ( _209_ A ) ( _205_ X ) + USE SIGNAL ;
+    - _098_ ( _209_ B ) ( _206_ X ) + USE SIGNAL ;
+    - _099_ ( _209_ C ) ( _207_ X ) + USE SIGNAL ;
+    - _100_ ( _209_ D ) ( _208_ X ) + USE SIGNAL ;
+    - _101_ ( max_cap25 A ) ( _211_ A2 ) ( _209_ Y ) + USE SIGNAL ;
+    - _102_ ( _330_ B1 ) ( _307_ B1 ) ( _231_ A ) ( _211_ B1 ) ( _210_ Y ) + USE SIGNAL ;
+    - _103_ ( _274_ B1 ) ( _222_ B ) ( _219_ B ) ( _212_ B ) ( _211_ X ) + USE SIGNAL ;
+    - _104_ ( _277_ S ) ( _220_ A1 ) ( _212_ Y ) + USE SIGNAL ;
+    - _105_ ( _275_ B ) ( _263_ S ) ( _260_ S ) ( _257_ S ) ( _254_ S ) ( _251_ S ) ( _248_ S )
+      ( _237_ A ) ( _217_ B ) ( _214_ A ) ( _213_ X ) + USE SIGNAL ;
+    - _106_ ( _345_ A4 ) ( _338_ A1 ) ( _329_ B ) ( _319_ A1 ) ( _316_ A1 ) ( _306_ B ) ( _269_ A )
+      ( _238_ A1 ) ( _228_ A ) ( _219_ A ) ( _214_ X ) + USE SIGNAL ;
+    - _107_ ( _219_ C ) ( _216_ B ) ( _215_ Y ) + USE SIGNAL ;
+    - _108_ ( _276_ A2_N ) ( _217_ D ) ( _216_ Y ) + USE SIGNAL ;
+    - _109_ ( _270_ B ) ( _222_ C ) ( _218_ A ) ( _217_ Y ) + USE SIGNAL ;
+    - _110_ ( _354_ A ) ( _293_ S ) ( _291_ S ) ( _289_ S ) ( _287_ S ) ( _285_ S ) ( _283_ S )
+      ( _281_ S ) ( _279_ S ) ( _219_ D ) ( _218_ X ) + USE SIGNAL ;
+    - _111_ ( _226_ B1 ) ( _220_ A2 ) ( _219_ X ) + USE SIGNAL ;
+    - _112_ ( _226_ A1_N ) ( _225_ A ) ( _221_ Y ) + USE SIGNAL ;
+    - _113_ ( _223_ A ) ( _222_ X ) + USE SIGNAL ;
+    - _114_ ( _267_ S ) ( _264_ S ) ( _261_ S ) ( _258_ S ) ( _255_ S ) ( _252_ S ) ( _249_ S )
+      ( _233_ S ) ( _229_ S ) ( _226_ A2_N ) ( _223_ X ) + USE SIGNAL ;
+    - _115_ ( _228_ B ) ( _225_ B ) ( _224_ Y ) + USE SIGNAL ;
+    - _116_ ( _226_ B2 ) ( _225_ Y ) + USE SIGNAL ;
+    - _117_ ( _228_ C ) ( _227_ X ) + USE SIGNAL ;
+    - _118_ ( _229_ A1 ) ( _228_ X ) + USE SIGNAL ;
+    - _119_ ( _230_ A ) ( _229_ X ) + USE SIGNAL ;
+    - _120_ ( _350_ A2 ) ( _344_ B1 ) ( _337_ A ) ( _323_ B ) ( _315_ A ) ( _301_ B1 ) ( _276_ B2 )
+      ( _266_ A ) ( _239_ A ) ( _232_ B ) ( _231_ X ) + USE SIGNAL ;
+    - _121_ ( _233_ A1 ) ( _232_ Y ) + USE SIGNAL ;
+    - _122_ ( _234_ A ) ( _233_ X ) + USE SIGNAL ;
+    - _123_ ( _274_ A1 ) ( _236_ A ) ( _235_ Y ) + USE SIGNAL ;
+    - _124_ ( _239_ B ) ( _238_ A2 ) ( _236_ Y ) + USE SIGNAL ;
+    - _125_ ( _352_ A1 ) ( _348_ B1 ) ( _346_ A2 ) ( _338_ B1 ) ( _324_ B1 ) ( _316_ B1 ) ( _305_ A1 )
+      ( _303_ A2 ) ( _238_ B1 ) ( _237_ Y ) + USE SIGNAL ;
+    - _126_ ( _247_ A2 ) ( _246_ A2 ) ( _245_ A2 ) ( _244_ A2 ) ( _243_ A2 ) ( _242_ A2 ) ( _241_ A2 )
+      ( _240_ A2 ) ( _238_ X ) + USE SIGNAL ;
+    - _127_ ( _247_ B1 ) ( _246_ B1 ) ( _245_ B1 ) ( _244_ B1 ) ( _243_ B1 ) ( _242_ B1 ) ( _241_ B1 )
+      ( _240_ B1 ) ( _239_ Y ) + USE SIGNAL ;
+    - _128_ ( _249_ A1 ) ( _248_ X ) + USE SIGNAL ;
+    - _129_ ( _250_ A ) ( _249_ X ) + USE SIGNAL ;
+    - _130_ ( _252_ A1 ) ( _251_ X ) + USE SIGNAL ;
+    - _131_ ( _253_ A ) ( _252_ X ) + USE SIGNAL ;
+    - _132_ ( _255_ A1 ) ( _254_ X ) + USE SIGNAL ;
+    - _133_ ( _256_ A ) ( _255_ X ) + USE SIGNAL ;
+    - _134_ ( _258_ A1 ) ( _257_ X ) + USE SIGNAL ;
+    - _135_ ( _259_ A ) ( _258_ X ) + USE SIGNAL ;
+    - _136_ ( _261_ A1 ) ( _260_ X ) + USE SIGNAL ;
+    - _137_ ( _262_ A ) ( _261_ X ) + USE SIGNAL ;
+    - _138_ ( _264_ A1 ) ( _263_ X ) + USE SIGNAL ;
+    - _139_ ( _265_ A ) ( _264_ X ) + USE SIGNAL ;
+    - _140_ ( _267_ A1 ) ( _266_ X ) + USE SIGNAL ;
+    - _141_ ( _268_ A ) ( _267_ X ) + USE SIGNAL ;
+    - _142_ ( _352_ A0 ) ( _349_ A2 ) ( _341_ A ) ( _334_ B ) ( _326_ A ) ( _324_ A1 ) ( _311_ B )
+      ( _304_ A1 ) ( _302_ A2 ) ( _272_ A2 ) ( _269_ X ) + USE SIGNAL ;
+    - _143_ ( _271_ A ) ( _270_ X ) + USE SIGNAL ;
+    - _144_ ( _348_ A1 ) ( _274_ A2 ) ( _273_ Y ) + USE SIGNAL ;
+    - _145_ ( _276_ A1_N ) ( _275_ Y ) + USE SIGNAL ;
+    - _146_ ( _277_ A0 ) ( _276_ X ) + USE SIGNAL ;
+    - _147_ ( _278_ A ) ( _277_ X ) + USE SIGNAL ;
+    - _148_ ( _280_ A ) ( _279_ X ) + USE SIGNAL ;
+    - _149_ ( _282_ A ) ( _281_ X ) + USE SIGNAL ;
+    - _150_ ( _284_ A ) ( _283_ X ) + USE SIGNAL ;
+    - _151_ ( _286_ A ) ( _285_ X ) + USE SIGNAL ;
+    - _152_ ( _288_ A ) ( _287_ X ) + USE SIGNAL ;
+    - _153_ ( _290_ A ) ( _289_ X ) + USE SIGNAL ;
+    - _154_ ( _292_ A ) ( _291_ X ) + USE SIGNAL ;
+    - _155_ ( _294_ A ) ( _293_ X ) + USE SIGNAL ;
+    - _156_ ( _303_ A1 ) ( _295_ Y ) + USE SIGNAL ;
+    - _157_ ( _341_ B ) ( _336_ B ) ( _328_ C ) ( _326_ B ) ( _322_ B ) ( _313_ C ) ( _299_ A )
+      ( _296_ X ) + USE SIGNAL ;
+    - _158_ ( _326_ C ) ( _322_ C ) ( _313_ D ) ( _299_ B ) ( _297_ X ) + USE SIGNAL ;
+    - _159_ ( _299_ C ) ( _298_ X ) + USE SIGNAL ;
+    - _160_ ( _311_ C ) ( _307_ A2 ) ( _306_ C ) ( _300_ C ) ( _299_ X ) + USE SIGNAL ;
+    - _161_ ( _304_ A2 ) ( _302_ A3 ) ( _301_ A2 ) ( _300_ X ) + USE SIGNAL ;
+    - _162_ ( _305_ A2 ) ( _303_ A3 ) ( _301_ Y ) + USE SIGNAL ;
+    - _163_ ( _303_ B1 ) ( _302_ X ) + USE SIGNAL ;
+    - _164_ ( _305_ B1 ) ( _304_ X ) + USE SIGNAL ;
+    - _165_ ( _309_ A0 ) ( _306_ X ) + USE SIGNAL ;
+    - _166_ ( _308_ B ) ( _307_ X ) + USE SIGNAL ;
+    - _167_ ( _312_ A2 ) ( _309_ A1 ) ( _308_ Y ) + USE SIGNAL ;
+    - _168_ ( _310_ A ) ( _309_ X ) + USE SIGNAL ;
+    - _169_ ( _312_ B1 ) ( _311_ X ) + USE SIGNAL ;
+    - _170_ ( _319_ A2 ) ( _314_ B ) ( _313_ X ) + USE SIGNAL ;
+    - _171_ ( _316_ A2 ) ( _315_ B ) ( _314_ Y ) + USE SIGNAL ;
+    - _172_ ( _317_ A0 ) ( _315_ Y ) + USE SIGNAL ;
+    - _173_ ( _320_ A ) ( _317_ A1 ) ( _316_ X ) + USE SIGNAL ;
+    - _174_ ( _318_ A ) ( _317_ X ) + USE SIGNAL ;
+    - _175_ ( _320_ B ) ( _319_ X ) + USE SIGNAL ;
+    - _176_ ( _321_ A ) ( _320_ X ) + USE SIGNAL ;
+    - _177_ ( _326_ D ) ( _325_ A1_N ) ( _324_ A2 ) ( _322_ Y ) + USE SIGNAL ;
+    - _178_ ( _325_ A2_N ) ( _323_ X ) + USE SIGNAL ;
+    - _179_ ( _327_ A2 ) ( _325_ B1 ) ( _324_ X ) + USE SIGNAL ;
+    - _180_ ( _327_ B1 ) ( _326_ X ) + USE SIGNAL ;
+    - _181_ ( _334_ C ) ( _330_ A2 ) ( _329_ C ) ( _328_ X ) + USE SIGNAL ;
+    - _182_ ( _332_ A0 ) ( _329_ X ) + USE SIGNAL ;
+    - _183_ ( _331_ B ) ( _330_ X ) + USE SIGNAL ;
+    - _184_ ( _335_ A2 ) ( _332_ A1 ) ( _331_ Y ) + USE SIGNAL ;
+    - _185_ ( _333_ A ) ( _332_ X ) + USE SIGNAL ;
+    - _186_ ( _335_ B1 ) ( _334_ X ) + USE SIGNAL ;
+    - _187_ ( _341_ C ) ( _338_ A2 ) ( _337_ B ) ( _336_ Y ) + USE SIGNAL ;
+    - _188_ ( _339_ A0 ) ( _337_ Y ) + USE SIGNAL ;
+    - _189_ ( _342_ A2 ) ( _339_ A1 ) ( _338_ X ) + USE SIGNAL ;
+    - _190_ ( _340_ A ) ( _339_ X ) + USE SIGNAL ;
+    - _191_ ( _342_ B1 ) ( _341_ X ) + USE SIGNAL ;
+    - _192_ ( _346_ A1 ) ( _343_ Y ) + USE SIGNAL ;
+    - _193_ ( _348_ A2 ) ( _346_ A3 ) ( _344_ Y ) + USE SIGNAL ;
+    - _194_ ( _346_ B1 ) ( _345_ X ) + USE SIGNAL ;
+    - _195_ ( _348_ A3 ) ( _347_ X ) + USE SIGNAL ;
+    - _196_ ( _351_ A ) ( _349_ Y ) + USE SIGNAL ;
+    - _197_ ( _351_ B ) ( _350_ X ) + USE SIGNAL ;
+    - _198_ ( _353_ A ) ( _352_ X ) + USE SIGNAL ;
+    - _199_ ( _407_ A ) ( _406_ A ) ( _405_ A ) ( _404_ A ) ( _403_ A ) ( _402_ A ) ( _401_ A )
+      ( _400_ A ) ( _367_ A ) ( _356_ A ) ( _355_ X ) + USE SIGNAL ;
+    - _200_ ( _366_ A ) ( _365_ A ) ( _364_ A ) ( _363_ A ) ( _362_ A ) ( _361_ A ) ( _360_ A )
+      ( _359_ A ) ( _358_ A ) ( _357_ A ) ( _356_ X ) + USE SIGNAL ;
+    - _201_ ( _377_ A ) ( _376_ A ) ( _375_ A ) ( _374_ A ) ( _373_ A ) ( _372_ A ) ( _371_ A )
+      ( _370_ A ) ( _369_ A ) ( _368_ A ) ( _367_ X ) + USE SIGNAL ;
+    - _202_ ( _388_ A ) ( _387_ A ) ( _386_ A ) ( _385_ A ) ( _384_ A ) ( _383_ A ) ( _382_ A )
+      ( _381_ A ) ( _380_ A ) ( _379_ A ) ( _378_ X ) + USE SIGNAL ;
+    - _203_ ( _399_ A ) ( _398_ A ) ( _397_ A ) ( _396_ A ) ( _395_ A ) ( _394_ A ) ( _393_ A )
+      ( _392_ A ) ( _391_ A ) ( _390_ A ) ( _389_ X ) + USE SIGNAL ;
+    - bit_count\[0\] ( _452_ Q ) ( _233_ A0 ) ( _232_ A ) ( _227_ B ) ( _224_ B ) ( _215_ C ) + USE SIGNAL ;
+    - bit_count\[1\] ( _453_ Q ) ( _229_ A0 ) ( _227_ A ) ( _224_ A ) ( _215_ B ) + USE SIGNAL ;
+    - bit_count\[2\] ( _454_ Q ) ( _221_ A ) ( _215_ A ) + USE SIGNAL ;
+    - bit_count\[3\] ( _455_ Q ) ( _220_ B1 ) ( _216_ A ) + USE SIGNAL ;
+    - busy ( PIN busy ) ( output12 X ) + USE SIGNAL ;
+    - clk ( PIN clk ) ( _455_ CLK ) ( _454_ CLK ) ( _453_ CLK ) ( _452_ CLK ) ( _451_ CLK ) ( _450_ CLK )
+      ( _449_ CLK ) ( _448_ CLK ) ( _447_ CLK ) ( _446_ CLK ) ( _445_ CLK ) ( _444_ CLK ) ( _443_ CLK ) ( _442_ CLK )
+      ( _441_ CLK ) ( _440_ CLK ) ( _439_ CLK ) ( _438_ CLK ) ( _437_ CLK ) ( _436_ CLK ) ( _435_ CLK ) ( _434_ CLK )
+      ( _433_ CLK ) ( _432_ CLK ) ( _431_ CLK ) ( _430_ CLK ) ( _429_ CLK ) ( _428_ CLK ) ( _427_ CLK ) ( _426_ CLK )
+      ( _425_ CLK ) ( _424_ CLK ) ( _423_ CLK ) ( _422_ CLK ) ( _421_ CLK ) ( _420_ CLK ) ( _419_ CLK ) ( _418_ CLK )
+      ( _417_ CLK ) ( _416_ CLK ) ( _415_ CLK ) ( _414_ CLK ) ( _413_ CLK ) ( _412_ CLK ) ( _411_ CLK ) ( _410_ CLK )
+      ( _409_ CLK ) ( _408_ CLK ) + USE CLOCK ;
+    - clk_count\[0\] ( _408_ Q ) ( _352_ S ) ( _350_ A1 ) ( _349_ A1 ) ( _347_ A2 ) ( _345_ A3 ) ( _344_ A3 )
+      ( _296_ D ) ( _206_ D_N ) + USE SIGNAL ;
+    - clk_count\[10\] ( _418_ Q ) ( _319_ B1 ) ( _314_ A ) ( _298_ B ) ( _205_ D ) + USE SIGNAL ;
+    - clk_count\[11\] ( _419_ Q ) ( _317_ S ) ( _298_ A ) ( _205_ C ) + USE SIGNAL ;
+    - clk_count\[12\] ( _420_ Q ) ( _312_ A1 ) ( _311_ A_N ) ( _307_ A1 ) ( _306_ A ) ( _300_ B ) ( _205_ B ) + USE SIGNAL ;
+    - clk_count\[13\] ( _421_ Q ) ( _309_ S ) ( _300_ A ) ( _205_ A ) + USE SIGNAL ;
+    - clk_count\[14\] ( _422_ Q ) ( _304_ B1 ) ( _302_ A1 ) ( _301_ A1 ) ( _206_ B ) + USE SIGNAL ;
+    - clk_count\[15\] ( _423_ Q ) ( _302_ B1 ) ( _295_ A ) ( _206_ A ) + USE SIGNAL ;
+    - clk_count\[1\] ( _409_ Q ) ( _350_ C1 ) ( _349_ B1 ) ( _347_ A1 ) ( _345_ A2 ) ( _344_ A2 ) ( _296_ C )
+      ( _206_ C_N ) + USE SIGNAL ;
+    - clk_count\[2\] ( _410_ Q ) ( _348_ B2 ) ( _347_ B1 ) ( _345_ A1 ) ( _344_ A1 ) ( _296_ B ) ( _208_ D ) + USE SIGNAL ;
+    - clk_count\[3\] ( _411_ Q ) ( _345_ B1 ) ( _343_ A ) ( _296_ A ) ( _208_ C ) + USE SIGNAL ;
+    - clk_count\[4\] ( _412_ Q ) ( _342_ A1 ) ( _336_ A ) ( _328_ B ) ( _297_ D ) ( _208_ B ) + USE SIGNAL ;
+    - clk_count\[5\] ( _413_ Q ) ( _339_ S ) ( _328_ A ) ( _297_ C ) ( _208_ A ) + USE SIGNAL ;
+    - clk_count\[6\] ( _414_ Q ) ( _335_ A1 ) ( _334_ A_N ) ( _330_ A1 ) ( _329_ A ) ( _297_ B ) ( _207_ D ) + USE SIGNAL ;
+    - clk_count\[7\] ( _415_ Q ) ( _332_ S ) ( _297_ A ) ( _207_ C ) + USE SIGNAL ;
+    - clk_count\[8\] ( _416_ Q ) ( _327_ A1 ) ( _322_ A ) ( _313_ B ) ( _298_ D ) ( _207_ B ) + USE SIGNAL ;
+    - clk_count\[9\] ( _417_ Q ) ( _325_ B2 ) ( _323_ A ) ( _313_ A ) ( _298_ C ) ( _207_ A ) + USE SIGNAL ;
+    - cs ( PIN cs ) ( output13 X ) + USE SIGNAL ;
+    - done ( PIN done ) ( output14 X ) + USE SIGNAL ;
+    - miso ( PIN miso ) ( input1 A ) + USE SIGNAL ;
+    - mosi ( PIN mosi ) ( output15 X ) + USE SIGNAL ;
+    - net1 ( input1 X ) ( _247_ B2 ) + USE SIGNAL ;
+    - net10 ( input10 X ) ( _248_ A0 ) + USE SIGNAL ;
+    - net11 ( input11 X ) ( _276_ B1 ) + USE SIGNAL ;
+    - net12 ( output12 A ) ( _424_ Q ) ( _213_ A ) ( _210_ A ) ( _204_ A ) + USE SIGNAL ;
+    - net13 ( output13 A ) ( _436_ Q ) ( _272_ A1 ) + USE SIGNAL ;
+    - net14 ( output14 A ) ( _425_ Q ) + USE SIGNAL ;
+    - net15 ( output15 A ) ( _434_ Q ) ( _277_ A1 ) + USE SIGNAL ;
+    - net16 ( output16 A ) ( _426_ Q ) ( _293_ A1 ) + USE SIGNAL ;
+    - net17 ( output17 A ) ( _427_ Q ) ( _291_ A1 ) + USE SIGNAL ;
+    - net18 ( output18 A ) ( _428_ Q ) ( _289_ A1 ) + USE SIGNAL ;
+    - net19 ( output19 A ) ( _429_ Q ) ( _287_ A1 ) + USE SIGNAL ;
+    - net2 ( input2 X ) ( _389_ A ) ( _378_ A ) ( _355_ A ) + USE SIGNAL ;
+    - net20 ( output20 A ) ( _430_ Q ) ( _285_ A1 ) + USE SIGNAL ;
+    - net21 ( output21 A ) ( _431_ Q ) ( _283_ A1 ) + USE SIGNAL ;
+    - net22 ( output22 A ) ( _432_ Q ) ( _281_ A1 ) + USE SIGNAL ;
+    - net23 ( output23 A ) ( _433_ Q ) ( _279_ A1 ) + USE SIGNAL ;
+    - net24 ( output24 A ) ( _435_ Q ) ( _235_ A ) ( _217_ A ) ( _211_ A1 ) + USE SIGNAL ;
+    - net25 ( max_cap25 X ) ( _273_ A ) ( _236_ B ) ( _217_ C ) + USE SIGNAL ;
+    - net3 ( input3 X ) ( _237_ B ) ( _204_ B ) + USE SIGNAL ;
+    - net4 ( input4 X ) ( _266_ B ) + USE SIGNAL ;
+    - net5 ( input5 X ) ( _263_ A0 ) + USE SIGNAL ;
+    - net6 ( input6 X ) ( _260_ A0 ) + USE SIGNAL ;
+    - net7 ( input7 X ) ( _257_ A0 ) + USE SIGNAL ;
+    - net8 ( input8 X ) ( _254_ A0 ) + USE SIGNAL ;
+    - net9 ( input9 X ) ( _251_ A0 ) + USE SIGNAL ;
+    - rst ( PIN rst ) ( input2 A ) + USE SIGNAL ;
+    - rx_data[0] ( PIN rx_data[0] ) ( output16 X ) + USE SIGNAL ;
+    - rx_data[1] ( PIN rx_data[1] ) ( output17 X ) + USE SIGNAL ;
+    - rx_data[2] ( PIN rx_data[2] ) ( output18 X ) + USE SIGNAL ;
+    - rx_data[3] ( PIN rx_data[3] ) ( output19 X ) + USE SIGNAL ;
+    - rx_data[4] ( PIN rx_data[4] ) ( output20 X ) + USE SIGNAL ;
+    - rx_data[5] ( PIN rx_data[5] ) ( output21 X ) + USE SIGNAL ;
+    - rx_data[6] ( PIN rx_data[6] ) ( output22 X ) + USE SIGNAL ;
+    - rx_data[7] ( PIN rx_data[7] ) ( output23 X ) + USE SIGNAL ;
+    - rx_shift\[0\] ( _444_ Q ) ( _293_ A0 ) ( _247_ A1 ) ( _246_ B2 ) + USE SIGNAL ;
+    - rx_shift\[1\] ( _445_ Q ) ( _291_ A0 ) ( _246_ A1 ) ( _245_ B2 ) + USE SIGNAL ;
+    - rx_shift\[2\] ( _446_ Q ) ( _289_ A0 ) ( _245_ A1 ) ( _244_ B2 ) + USE SIGNAL ;
+    - rx_shift\[3\] ( _447_ Q ) ( _287_ A0 ) ( _244_ A1 ) ( _243_ B2 ) + USE SIGNAL ;
+    - rx_shift\[4\] ( _448_ Q ) ( _285_ A0 ) ( _243_ A1 ) ( _242_ B2 ) + USE SIGNAL ;
+    - rx_shift\[5\] ( _449_ Q ) ( _283_ A0 ) ( _242_ A1 ) ( _241_ B2 ) + USE SIGNAL ;
+    - rx_shift\[6\] ( _450_ Q ) ( _281_ A0 ) ( _241_ A1 ) ( _240_ B2 ) + USE SIGNAL ;
+    - rx_shift\[7\] ( _451_ Q ) ( _279_ A0 ) ( _240_ A1 ) + USE SIGNAL ;
+    - sclk ( PIN sclk ) ( output24 X ) + USE SIGNAL ;
+    - start ( PIN start ) ( input3 A ) + USE SIGNAL ;
+    - tx_data[0] ( PIN tx_data[0] ) ( input4 A ) + USE SIGNAL ;
+    - tx_data[1] ( PIN tx_data[1] ) ( input5 A ) + USE SIGNAL ;
+    - tx_data[2] ( PIN tx_data[2] ) ( input6 A ) + USE SIGNAL ;
+    - tx_data[3] ( PIN tx_data[3] ) ( input7 A ) + USE SIGNAL ;
+    - tx_data[4] ( PIN tx_data[4] ) ( input8 A ) + USE SIGNAL ;
+    - tx_data[5] ( PIN tx_data[5] ) ( input9 A ) + USE SIGNAL ;
+    - tx_data[6] ( PIN tx_data[6] ) ( input10 A ) + USE SIGNAL ;
+    - tx_data[7] ( PIN tx_data[7] ) ( input11 A ) + USE SIGNAL ;
+    - tx_shift\[0\] ( _437_ Q ) ( _267_ A0 ) ( _263_ A1 ) + USE SIGNAL ;
+    - tx_shift\[1\] ( _438_ Q ) ( _264_ A0 ) ( _260_ A1 ) + USE SIGNAL ;
+    - tx_shift\[2\] ( _439_ Q ) ( _261_ A0 ) ( _257_ A1 ) + USE SIGNAL ;
+    - tx_shift\[3\] ( _440_ Q ) ( _258_ A0 ) ( _254_ A1 ) + USE SIGNAL ;
+    - tx_shift\[4\] ( _441_ Q ) ( _255_ A0 ) ( _251_ A1 ) + USE SIGNAL ;
+    - tx_shift\[5\] ( _442_ Q ) ( _252_ A0 ) ( _248_ A1 ) + USE SIGNAL ;
+    - tx_shift\[6\] ( _443_ Q ) ( _275_ A ) ( _249_ A0 ) + USE SIGNAL ;
+END NETS
+END DESIGN
