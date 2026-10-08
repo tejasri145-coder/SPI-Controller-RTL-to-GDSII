@@ -1,0 +1,45 @@
+SPI CONTROLLER — RTL TO GDSII RESULTS SUMMARY
+
+Project: SPI-Controller-RTL-to-GDSII
+Design: SPI Master Controller
+Technology: Sky130
+Flow: OpenLane v1.0.2
+
+FUNCTIONAL VERIFICATION
+-----------------------
+SPI Master simulation completed successfully.
+TX DATA: 10110010
+RX DATA: 11001101
+BUSY: 0
+DONE: 1
+TEST RESULT: PASS
+
+STA CORNERS
+-----------
+SS (Slow-Slow): rCX STA reports generated
+TT (Typical-Typical): rCX STA reports generated
+FF (Fast-Fast): rCX STA reports generated
+
+Each corner contains:
+- checks report
+- max timing report
+- min timing report
+- power report
+- skew report
+- summary report
+
+SIGNOFF
+-------
+STA reports: Available
+STA all-corners report: Generated
+Synthesis: Completed
+Placement: Completed
+Routing: Completed
+DRC: Completed
+LVS: Completed
+XOR: Completed
+GDSII: Generated
+
+PROJECT STATUS
+--------------
+SPI Controller RTL-to-GDSII flow completed.
