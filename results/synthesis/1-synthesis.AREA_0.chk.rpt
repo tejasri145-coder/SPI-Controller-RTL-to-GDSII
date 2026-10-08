@@ -1,0 +1,17 @@
+
+60. Executing CHECK pass (checking for obvious problems).
+Checking module spi_master...
+Warning: Wire spi_master.\sclk is used but has no driver.
+Warning: Wire spi_master.\rx_data [7] is used but has no driver.
+Warning: Wire spi_master.\rx_data [6] is used but has no driver.
+Warning: Wire spi_master.\rx_data [5] is used but has no driver.
+Warning: Wire spi_master.\rx_data [4] is used but has no driver.
+Warning: Wire spi_master.\rx_data [3] is used but has no driver.
+Warning: Wire spi_master.\rx_data [2] is used but has no driver.
+Warning: Wire spi_master.\rx_data [1] is used but has no driver.
+Warning: Wire spi_master.\rx_data [0] is used but has no driver.
+Warning: Wire spi_master.\mosi is used but has no driver.
+Warning: Wire spi_master.\done is used but has no driver.
+Warning: Wire spi_master.\cs is used but has no driver.
+Warning: Wire spi_master.\busy is used but has no driver.
+Found and reported 13 problems.
